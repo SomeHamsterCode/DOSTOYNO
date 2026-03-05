@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { useGameStore, AvatarConfig } from '../store/gameStore';
-import { AvatarSVG } from '../components/Registration';
-import { russianModules } from '../data/russianData';
-import { BUILDING_TYPES } from '../data/buildingsData';
+import { useGameStore, AvatarConfig } from './store/gameStore';
+import { AvatarSVG } from './components/Registration';
+import { russianModules } from './data/russianData';
+import { BUILDING_TYPES } from './data/buildingsData';
 
 const SKINS = [
   { id: 'light', color: '#FDDBB4' }, { id: 'medium', color: '#D4956A' },
