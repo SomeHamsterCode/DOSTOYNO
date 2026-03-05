@@ -8,10 +8,8 @@ import { viteSingleFile } from "vite-plugin-singlefile";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// https://vite.dev/config/
 export default defineConfig({
-  // ⚠️ Замените 'ege-arena' на точное название вашего репозитория на GitHub
-  // Если репо называется username.github.io — уберите строку base совсем
+  // ВАЖНО: замените 'ege-arena' на название вашего репозитория!
   base: '/DOSTOYNO/',
   plugins: [react(), tailwindcss(), viteSingleFile()],
   resolve: {
@@ -19,4 +17,9 @@ export default defineConfig({
       "@": path.resolve(__dirname, "src"),
     },
   },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    // sourcemap: true, // можно включить для отладки
+  }
 });
