@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 export default defineConfig({
   // ⚠️ Замените 'ege-arena' на точное название вашего репозитория на GitHub
   // Если репо называется username.github.io — уберите строку base совсем
-  base: './',
+  base: '/DOSTOYNO/',
   plugins: [react(), tailwindcss(), viteSingleFile()],
   resolve: {
     alias: {
