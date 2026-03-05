@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGameStore } from '../store/gameStore';
-import { russianModules, Module, Section } from '../data/russianData';
-import { QuizModal } from '../components/QuizModal';
+import { useGameStore } from './store/gameStore';
+import { russianModules, Module, Section } from './data/russianData';
+import { QuizModal } from './components/QuizModal';
 
 function SectionCard({ section, moduleId, isCompleted, bestScore, isLocked }: {
   section: Section; moduleId: string; isCompleted: boolean; bestScore: number; isLocked: boolean;
