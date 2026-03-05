@@ -1,23 +1,17 @@
-import path from "path";
-import { fileURLToPath } from "url";
-import tailwindcss from "@tailwindcss/vite";
-import react from "@vitejs/plugin-react";
-import { defineConfig } from "vite";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// Название вашего репозитория - ключ к решению!
+const repoName = 'DOSTOYNO'
 
 export default defineConfig({
-  // ВАЖНО: замените 'DOSTOYNO' на название вашего репозитория
-  base: '/DOSTOYNO/',
-  plugins: [react(), tailwindcss()],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "src"),
-    },
-  },
+  // Правильный base для GitHub Pages
+  base: `/${repoName}/`,
+  plugins: [react()], // Уберите viteSingleFile(), если он есть!
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
+    emptyOutDir: true,
+    sourcemap: false, // Для чистоты можно отключить
   }
-});
+})
