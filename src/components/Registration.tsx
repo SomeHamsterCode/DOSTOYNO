@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGameStore, AvatarConfig } from '../store/gameStore';
+import { useGameStore, AvatarConfig } from 'src/store/gameStore';
 
 const SKINS = [
   { id: 'light', label: 'Светлый', color: '#FDDBB4' },
