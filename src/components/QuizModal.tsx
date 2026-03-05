@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGameStore } from '../store/gameStore';
-import { QuizQuestion, Section } from '../data/russianData';
+import { useGameStore } from './store/gameStore';
+import { QuizQuestion, Section } from './data/russianData';
 
 interface Props {
   section: Section;
