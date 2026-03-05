@@ -3,15 +3,14 @@ import { fileURLToPath } from "url";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
-import { viteSingleFile } from "vite-plugin-singlefile";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default defineConfig({
-  // ВАЖНО: замените 'ege-arena' на название вашего репозитория!
+  // ВАЖНО: замените 'DOSTOYNO' на название вашего репозитория
   base: '/DOSTOYNO/',
-  plugins: [react(), tailwindcss(), viteSingleFile()],
+  plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
@@ -20,6 +19,5 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    // sourcemap: true, // можно включить для отладки
   }
 });
