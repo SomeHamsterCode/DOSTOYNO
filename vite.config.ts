@@ -6,7 +6,7 @@ const repoName = 'DOSTOYNO'
 
 export default defineConfig({
   // Правильный base для GitHub Pages
-  base: `/${repoName}/`,
+  base: '/DOSTOYNO/',
   plugins: [react()], // Уберите viteSingleFile(), если он есть!
   build: {
     outDir: 'dist',
