@@ -1,9 +1,9 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGameStore } from '../store/gameStore';
-import { BUILDING_TYPES, BuildingType, GRID_SIZE, CELL_SIZE } from '../data/buildingsData';
-import { russianModules } from '../data/russianData';
-import { AvatarSVG } from '../components/Registration';
+import { useGameStore } from './store/gameStore';
+import { BUILDING_TYPES, BuildingType, GRID_SIZE, CELL_SIZE } from './data/buildingsData';
+import { russianModules } from './data/russianData';
+import { AvatarSVG } from './components/Registration';
 
 const BOTS = [
   { name: 'Алексей_ЕГЭшник', emoji: '🤖', color: '#6366f1', buildings: 8, rating: 1200, level: 4 },
