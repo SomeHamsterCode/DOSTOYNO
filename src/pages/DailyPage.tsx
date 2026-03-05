@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGameStore } from '../store/gameStore';
-import { dailyQuestions } from '../data/russianData';
+import { useGameStore } from './store/gameStore';
+import { dailyQuestions } from './data/russianData';
 
 function getDailyTasks() {
   const today = new Date();
